@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import pandas_profiling
 from ydata_profiling import ProfileReport
-from streamlit_pandas_profiling import st_profile_report
+from streamlit_ydata_profiling import st_profile_report
 import streamlit as st
 c=st.container()
 with st.sidebar.header ("Upload data"):
