@@ -7,8 +7,11 @@ with st.sidebar.header:
   d=st.sidebar.file_uploader(label="Upload Data",type="csv")
 if d is not None:
   @st.cache_data
-  data=pd.read_csv(d)
-  a=ProfileReport(data)
+  def x():
+    data=pd.read_csv(d)
+    return data
+  u=x()
+  a=ProfileReport(x)
   st.write(a)
 else:
   st.info("Upload file")
