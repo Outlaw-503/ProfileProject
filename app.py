@@ -4,7 +4,7 @@ from ydata_profiling import ProfileReport
 import streamlit as st
 c=st.container()
 with st.sidebar.header ("Upload data"):
-  d=st.sidebar.file_uploader(label="Upload Data",type="csv")
+  d=st.sidebar.file_uploader(label="Upload Data",type=["csv"])
 if d is not None:
   @st.cache_data
   def x():
