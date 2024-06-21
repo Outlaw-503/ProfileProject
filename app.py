@@ -10,3 +10,6 @@ if d is not None:
   data=pd.read_csv(d)
   a=ProfileReport(data)
   st.write(a)
+else:
+  st.info("Upload file")
+  
