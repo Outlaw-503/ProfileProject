@@ -11,7 +11,7 @@ if d is not None :
     data=pd.read_csv(d)
     return data
   u=x()
-  a=ProfileReport(x,explorative=True)
+  a=ProfileReport(u,explorative=True)
   st_profile_report(a)
 else:
   st.info("Upload file")
