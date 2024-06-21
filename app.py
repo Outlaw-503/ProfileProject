@@ -12,7 +12,7 @@ if d is not None and (not d.rdd.isEmpty()):
     return data
   u=x()
   a=ProfileReport(x)
-  st.write(a)
+  st_profile_report(a)
 else:
   st.info("Upload file")
   
