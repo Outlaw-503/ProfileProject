@@ -5,7 +5,7 @@ import streamlit as st
 c=st.container()
 with st.sidebar.header ("Upload data"):
   d=st.sidebar.file_uploader(label="Upload Data",type=["csv"])
-if d is not None and !(d.rdd.isEmpty()):
+if d is not None and (not d.rdd.isEmpty()):
   @st.cache_data
   def x():
     data=pd.read_csv(d)
