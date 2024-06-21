@@ -2,5 +2,4 @@ pandas
 numpy
 streamlit>=1.35.0
 ydata_profiling
-st_profile_report
-python>=3.7
+streamlit_pandas_profiling
